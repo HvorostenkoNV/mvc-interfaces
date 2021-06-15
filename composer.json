@@ -1,0 +1,30 @@
+{
+  "name": "hnv/mvc-interfaces",
+  "description": "MVC interfaces set",
+  "keywords": [
+    "MVC"
+  ],
+  "authors": [
+    {
+      "name": "Nikita Hvorostenko",
+      "email": "hvorostenko.nikita@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "hnv/psr-http-interfaces": ">=2"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "HNV\\MVC\\Interfaces\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HNV\\MVC\\InterfacesTests\\": "tests/"
+    }
+  }
+}

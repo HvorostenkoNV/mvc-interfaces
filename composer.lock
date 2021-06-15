@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "de1674d41628f8099b0b724047b7fcbd",
+    "packages": [
+        {
+            "name": "hnv/psr-http-interfaces",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HvorostenkoNV/psr-http-interfaces.git",
+                "reference": "453836a082f6d60823cd90d2586affdb2fd6a86f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HvorostenkoNV/psr-http-interfaces/zipball/453836a082f6d60823cd90d2586affdb2fd6a86f",
+                "reference": "453836a082f6d60823cd90d2586affdb2fd6a86f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Nikita Hvorostenko",
+                    "email": "hvorostenko.nikita@gmail.com"
+                }
+            ],
+            "description": "PSR-7, PSR-15, PSR-17, PSR-18 interfaces package",
+            "keywords": [
+                "psr-15",
+                "psr-17",
+                "psr-18",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/HvorostenkoNV/psr-http-interfaces/issues",
+                "source": "https://github.com/HvorostenkoNV/psr-http-interfaces/tree/2.0"
+            },
+            "time": "2020-12-08T07:55:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
