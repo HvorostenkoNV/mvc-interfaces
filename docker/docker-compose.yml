@@ -2,16 +2,21 @@ version: '3'
 
 networks:
   mvc-interfaces:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.4.0/24
+          gateway: 10.10.4.1
 
 services:
   php:
-    image: jorge07/alpine-php:${PHP_VERSION}-dev
-    container_name: mvc-interfaces-php
+    build: php
+    container_name: 'mvc-interfaces-php'
     volumes:
       - ../:/var/www/html
     ports:
-      - "${PHP_PORT}:9000"
-      - "${SSH_PORT}:22"
+      - "9000:9000"
     working_dir: /var/www/html
     networks:
-      - mvc-interfaces
+      mvc-interfaces:
+        ipv4_address: 10.10.4.2
