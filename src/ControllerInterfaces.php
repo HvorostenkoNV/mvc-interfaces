@@ -1,28 +1,26 @@
 <?php
+
 declare(strict_types=1);
 
 namespace HNV\MVC\Interfaces;
 
-use Psr\Http\Message\RequestInterface;
 use HNV\MVC\Interfaces\Exception\ViewNotFoundExceptionInterfaces;
+use Psr\Http\Message\RequestInterface;
+
 /**
  * Controller common interface.
- *
- * @package HNV\MVC\Interfaces
  */
 interface ControllerInterfaces
 {
     /**
      * Handle HTTP request and provide view.
      *
-     * @param   RequestInterface    $request        HTTP request.
-     * @param   array               $parameters     Additional parameters.
+     * Additional parameters usually parsed from URI according to it`s template.
      *
-     * @return  ViewInterfaces                      View.
-     * @throws  ViewNotFoundExceptionInterfaces     View was not found.
+     * @throws ViewNotFoundExceptionInterfaces view was not found
      */
     public function handleRequest(
-        RequestInterface    $request,
-        array               $parameters = []
+        RequestInterface $request,
+        array $parameters = []
     ): ViewInterfaces;
 }
